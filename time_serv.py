@@ -7,6 +7,7 @@ app = Flask(__name__)
 def get_time():
     current_time = datetime.now().strftime("%H:%M:%S")
     return jsonify({'time': current_time})
+    #return current_time
 
 if __name__ == '__main__':
     app.run(port=8090)
